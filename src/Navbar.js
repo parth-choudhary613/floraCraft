@@ -1,15 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Image from '../src/Components/logo.png'
 import './App.css'
+import Home from "./Home";
 const navStyle = {
     background: 'transparent'
   };
 function Navbar() {
 return (
     <>
- <nav style={navStyle}>
-  <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div className="relative flex h-16 items-center justify-between">
+    <div className="flex justify-center items-center">
+
+      <img className="h-80 w-auto" src={Image} alt="Your Company"/>
+    </div>
+ <nav style={navStyle} className="px-16">
+  <div className="mx-auto border-double border-4 border-pink-500/50 rounded-full ">
+    <div className="relative flex h-16 items-center justify-between px-8">
       <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <button type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
           <span className="absolute -inset-0.5"></span>
@@ -25,20 +31,19 @@ return (
         </button>
       </div>
       <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div className="flex flex-shrink-0 items-center">
-          <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/>
-        </div>
         <div className="hidden sm:ml-6 sm:block">
-          <div className="flex space-x-4">
-            <Link to="#" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Dashboard</Link>
-            <Link to="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</Link>
-            <Link to="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</Link>
-            <Link to="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</Link>
-          </div>
+          <div className="flex space-x-20">
+            <Link to="#" className="px-3 py-2 text-sm font-medium text-pink  hover:bg-pink-500 bg-rose-200/50  hover:text-white rounded-full border-none w-24 text-center " >Dashboard</Link>
+            <Link to="#" className="px-3 py-2 text-sm font-medium text-white-300 hover:bg-pink-500  bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center ">Team</Link>
+            <Link to="#" className="px-3 py-2 text-sm font-medium text-white-300 hover:bg-pink-500  bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center ">Projects</Link>
+            <Link to="#" className="px-3 py-2 text-sm font-medium text-white-300 hover:bg-pink-500  bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center ">Calendar</Link>
+            </div>
         </div>
       </div>
-      <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <button type="button" className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+      <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 px-8">
+         
+<Link to="#" className=" py-2 text-sm font-medium text-white-300 hover:bg-pink-500  bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center ">Calendar</Link>
+        <button type="button" className="relative rounded-full bg-pink-800 p-1 text-pink-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
           <span className="absolute -inset-1.5"></span>
           <span className="sr-only">View notifications</span>
           <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -46,40 +51,11 @@ return (
           </svg>
         </button>
 
-      
-        <div className="relative ml-3">
-          <div>
-            <button type="button" className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-              <span className="absolute -inset-1.5"></span>
-              <span className="sr-only">Open user menu</span>
-              <img className="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
-            </button>
-          </div>
-
-     
-          <div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-        
-            <Link to="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</Link>
-            <Link to="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</Link>
-            <Link to="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</Link>
-          </div>
-        </div>
       </div>
     </div>
   </div>
-
- 
-  <div className="sm:hidden" id="mobile-menu">
-    <div className="space-y-1 px-2 pb-3 pt-2">
-  
-      <Link to="#" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</Link>
-      <Link to="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</Link>
-      <Link to="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</Link>
-      <Link to="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</Link>
-    </div>
-  </div>
 </nav>
-
+<Home/>
     </>
 )
 }

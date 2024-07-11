@@ -1,0 +1,54 @@
+.homie{
+    height: 800px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    border-radius: 30px;
+    -webkit-border-radius: 66px;
+border-radius: 66px;
+background: transparent;
+-webkit-box-shadow: 9px 9px 45px #54565e, -9px -9px 45px #ffffff;
+box-shadow: 9px 9px 45px #54565e, -9px -9px 45px #ffffff;
+border: none;
+background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+
+}
+.top-banner {
+    width: 100%;
+    height: auto;
+    /* background: url(D:\Excellence\floraCraft\src\Components\homie.png) no-repeat center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15rem;
+    background-size: 100%;
+    text-align: left;
+}
+
+.content-container {
+    max-width: 500px;
+}
+
+.fph-1 {
+    color: #a82c48;
+    font-size: 2.5rem;
+    padding: auto;
+}
+
+.fpp-1 {
+    color: #333;
+    font-style: italic;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    padding-left: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .top-banner {
+        padding: 3rem 1rem;
+    }
+}
