@@ -25,7 +25,6 @@ function Grid(){
     </div>
 </div>
 </div>
-
 </>
 
     )
