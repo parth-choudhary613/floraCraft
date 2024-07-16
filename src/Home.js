@@ -1,5 +1,6 @@
 import React from "react";
 // import Image from '../src/Components/homie.png'
+import Cards from "./Cards";
 import "./Home.css";
 function Home() {
   return (
@@ -16,8 +17,8 @@ function Home() {
             </p>
          </div>
     </div>
-
       </div>
+  <Cards/>
     </>
   );
 }

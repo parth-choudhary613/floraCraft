@@ -1,0 +1,7 @@
+.cardie{
+    border-radius: 50px;
+    border: none;
+background: transparent;
+box-shadow: inset 50px 50px 100px #bb377d,
+            inset -50px -50px 100px #fbd3e9;
+}
