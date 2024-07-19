@@ -2,29 +2,58 @@ import React from "react";
 function Grid(){
     return (
 <>
-<div className=" mx-4 sm:mx-6 md:mx-8 lg:mx-24 mt-8 flex flex-wrap justify-center gap-6"> 
 
-<div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
-<div className="relative  overflow-hidden text-gray-700 shadow-lg bg-clip-border rounded-t-3xl h-64 sm:h-80">
-      <img src="https://docs.material-tailwind.com/img/team-3.jpg" alt="profile-picture" />
+<div className=" mx-8 sm:mx-6 md:mx-8 lg:mx-24 mt-10 flex flex-wrap justify-center"> 
+
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="grid gap-4">
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt=""/>
+        </div>
     </div>
-  <div class="col-start-3">
-  <div className="relative  overflow-hidden text-gray-700 shadow-lg bg-clip-border rounded-t-3xl h-64 sm:h-80">
-      <img src="https://docs.material-tailwind.com/img/team-3.jpg" alt="profile-picture" />
+    <div className="grid gap-4">
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt=""/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt=""/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt=""/>
+        </div>
     </div>
-     </div>
-     <div className="relative overflow-hidden text-gray-700 shadow-lg bg-clip-border rounded-t-3xl h-64 sm:h-80">
-      <img src="https://docs.material-tailwind.com/img/team-3.jpg" alt="profile-picture" />
-    </div> <div className="relative overflow-hidden text-gray-700 shadow-lg bg-clip-border rounded-t-3xl h-64 sm:h-80">
-      <img src="https://docs.material-tailwind.com/img/team-3.jpg" alt="profile-picture" />
+    <div className="grid gap-4">
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt=""/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt=""/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt=""/>
+        </div>
     </div>
-  <div class="row-start-1 col-start-2 col-span-2">
-  <div className="relative overflow-hidden text-gray-700 shadow-lg bg-clip-border ">
-      <img src="" alt="profile-picture" />
-    </div>
+    <div className="grid gap-4">
+        <div>
+            <img className="h-auto max-w-full rounded-lg " src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt=""/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt=""/>
+        </div>
+        <div>
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt=""/>
+        </div>
     </div>
 </div>
 </div>
+
+
 </>
 
     )

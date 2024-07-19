@@ -1,7 +1,23 @@
-.cardie{
-    border-radius: 50px;
-    border: none;
-background: transparent;
-box-shadow: inset 50px 50px 100px #bb377d,
-            inset -50px -50px 100px #fbd3e9;
+.cardie {
+  border-radius: 50px;
+  border: none;
+  background: transparent;
+  box-shadow: inset 50px 50px 100px #9e6461, inset -50px -50px 100px #c4838c;
+}
+.addtocart {
+  background-image: radial-gradient(
+    circle,
+    #df898b,
+    #e38f93,
+    #e7959b,
+    #ea9ca2,
+    #eea2aa,
+    #eca2aa,
+    #e9a1aa,
+    #e7a1aa,
+    #de99a2,
+    #d5929b,
+    #cd8a93,
+    #c4838c
+  );
 }
