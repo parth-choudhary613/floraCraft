@@ -1,59 +1,141 @@
 import React from "react";
+import DesignComponent from "./DesignComponents";
+import { Link } from "lucide-react";
 function Grid(){
     return (
 <>
-
-<div className=" mx-8 sm:mx-6 md:mx-8 lg:mx-24 mt-10 flex flex-wrap justify-center"> 
-
-<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <div className="grid gap-4">
-        <div>
-            <img className="h-full max-w-full rounded-lg" src="https://i.pinimg.com/236x/4f/2b/3c/4f2b3ce181439f7ca20d47310fcc40a9.jpg" alt=""/>
+<div className="w-full mt-8">
+  <div className="relative right-0">
+    <ul className="relative flex flex-wrap p-1 list-none rounded-xl bg-blue-gray-50/60" data-tabs="tabs" role="list">
+      <li className="z-30 flex-auto text-center">
+        <Link className="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+          data-tab-target="" role="tab" aria-selected="true" aria-controls="app">
+          <span className="ml-1">App</span>
+        </Link>
+      </li>
+      <li className="z-30 flex-auto text-center">
+        <Link className="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+          data-tab-target="" role="tab" aria-selected="false" aria-controls="message">
+          <span className="ml-1">Messages</span>
+        </Link>
+      </li>
+      <li className="z-30 flex-auto text-center">
+        <Link className="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+          data-tab-target="" role="tab" aria-selected="false" aria-controls="settings">
+          <span className="ml-1">Settings</span>
+        </Link>
+      </li>
+    </ul>
+    <div data-tab-content="" className="p-5">
+      <div className="block opacity-100" id="app" role="tabpanel">
+        <div role="tabpanel"
+          className="grid w-full grid-cols-3 gap-4 p-4 font-sans text-base antialiased font-light leading-relaxed text-gray-700 h-max"
+          data-value="html">
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+              alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2762&amp;q=80"
+              alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2832&amp;q=80"
+              alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg" alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg" alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1493&amp;q=80"
+              alt="image-photo" />
+          </div>
         </div>
-        <div>
-            <img className="h-2/4 rounded-lg" src="https://i.pinimg.com/236x/5a/b9/68/5ab968f013d3a90d71d9db84d948b9db.jpg" alt=""/>
+      </div>
+      <div className="hidden opacity-0" id="message" role="tabpanel">
+        <div role="tabpanel"
+          className="grid w-full grid-cols-3 gap-4 p-4 font-sans text-base antialiased font-light leading-relaxed text-gray-700 h-max"
+          data-value="html">
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg" alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg" alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1493&amp;q=80"
+              alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+              alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2762&amp;q=80"
+              alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2832&amp;q=80"
+              alt="image-photo" />
+          </div>
         </div>
-        <div>
-            <img className="h-full max-w-full rounded-lg" src="https://i.pinimg.com/236x/03/90/4c/03904cccfc6f2335a8c18dc3233cbb1e.jpg" alt=""/>
+      </div>
+      <div className="hidden opacity-0" id="settings" role="tabpanel">
+        <div role="tabpanel"
+          className="grid w-full grid-cols-3 gap-4 p-4 font-sans text-base antialiased font-light leading-relaxed text-gray-700 h-max"
+          data-value="html">
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+              alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2762&amp;q=80"
+              alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg" alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg" alt="image-photo" />
+          </div>
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1493&amp;q=80"
+              alt="image-photo" />
+          </div>
+ 
+          <div>
+            <img className="w-full h-40 max-w-full rounded-lg"
+              src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2832&amp;q=80"
+              alt="image-photo" />
+          </div>
         </div>
+      </div>
     </div>
-    <div className="grid gap-4">
-        <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt=""/>
-        </div>
-        <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt=""/>
-        </div>
-        <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt=""/>
-        </div>
-    </div>
-    <div className="grid gap-4">
-        <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt=""/>
-        </div>
-        <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt=""/>
-        </div>
-        <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt=""/>
-        </div>
-    </div>
-    <div className="grid gap-4">
-        <div>
-            <img className="h-auto max-w-full rounded-lg " src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt=""/>
-        </div>
-        <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt=""/>
-        </div>
-        <div>
-            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt=""/>
-        </div>
-    </div>
+  </div>
 </div>
-</div>
 
 
+<DesignComponent/>
 </>
 
     )
