@@ -1,0 +1,112 @@
+/* styles.css */
+
+.bg-structure {
+    background-image: linear-gradient(
+        to right top,
+        #df898b,
+        #e38f93,
+        #e7959b,
+        #ea9ca2,
+        #eea2aa,
+        #eca2aa,
+        #e9a1aa,
+        #e7a1aa,
+        #de99a2,
+        #d5929b,
+        #cd8a93,
+        #c4838c
+      );
+  }
+  
+  .bg-develop {
+    background-image: linear-gradient(
+        to left top,
+        #df898b,
+        #e38f93,
+        #e7959b,
+        #ea9ca2,
+        #eea2aa,
+        #eca2aa,
+        #e9a1aa,
+        #e7a1aa,
+        #de99a2,
+        #d5929b,
+        #cd8a93,
+        #c4838c
+      );
+  }
+  
+  .bg-calculate {
+    background-image: linear-gradient(
+        to right bottom,
+        #df898b,
+        #e38f93,
+        #e7959b,
+        #ea9ca2,
+        #eea2aa,
+        #eca2aa,
+        #e9a1aa,
+        #e7a1aa,
+        #de99a2,
+        #d5929b,
+        #cd8a93,
+        #c4838c
+      );
+  }
+  
+  .bg-test {
+    background-image: linear-gradient(
+        to left bottom,
+        #df898b,
+        #e38f93,
+        #e7959b,
+        #ea9ca2,
+        #eea2aa,
+        #eca2aa,
+        #e9a1aa,
+        #e7a1aa,
+        #de99a2,
+        #d5929b,
+        #cd8a93,
+        #c4838c
+      );
+  }
+  
+  .bg-execute {
+    background-image: linear-gradient(
+        to center,
+        #df898b,
+        #e38f93,
+        #e7959b,
+        #ea9ca2,
+        #eea2aa,
+        #eca2aa,
+        #e9a1aa,
+        #e7a1aa,
+        #de99a2,
+        #d5929b,
+        #cd8a93,
+        #c4838c
+      );
+  }
+  
+  .text-yellow-700 {
+    color: brown;
+  }
+  
+  .text-red-700 {
+    color: brown;
+  }
+  
+  .text-green-700 {
+    color: brown;
+  }
+  
+  .text-blue-700 {
+    color: brown;
+  }
+  
+  .text-indigo-700 {
+    color: brown;
+  }
+  

@@ -1,143 +1,25 @@
-import React from "react";
-import DesignComponent from "./DesignComponents";
-import { Link } from "lucide-react";
-function Grid(){
-    return (
-<>
-<div className="w-full mt-8">
-  <div className="relative right-0">
-    <ul className="relative flex flex-wrap p-1 list-none rounded-xl bg-blue-gray-50/60" data-tabs="tabs" role="list">
-      <li className="z-30 flex-auto text-center">
-        <Link className="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
-          data-tab-target="" role="tab" aria-selected="true" aria-controls="app">
-          <span className="ml-1">App</span>
-        </Link>
-      </li>
-      <li className="z-30 flex-auto text-center">
-        <Link className="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
-          data-tab-target="" role="tab" aria-selected="false" aria-controls="message">
-          <span className="ml-1">Messages</span>
-        </Link>
-      </li>
-      <li className="z-30 flex-auto text-center">
-        <Link className="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
-          data-tab-target="" role="tab" aria-selected="false" aria-controls="settings">
-          <span className="ml-1">Settings</span>
-        </Link>
-      </li>
-    </ul>
-    <div data-tab-content="" className="p-5">
-      <div className="block opacity-100" id="app" role="tabpanel">
-        <div role="tabpanel"
-          className="grid w-full grid-cols-3 gap-4 p-4 font-sans text-base antialiased font-light leading-relaxed text-gray-700 h-max"
-          data-value="html">
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
-              alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2762&amp;q=80"
-              alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2832&amp;q=80"
-              alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg" alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg" alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1493&amp;q=80"
-              alt="image-photo" />
-          </div>
-        </div>
-      </div>
-      <div className="hidden opacity-0" id="message" role="tabpanel">
-        <div role="tabpanel"
-          className="grid w-full grid-cols-3 gap-4 p-4 font-sans text-base antialiased font-light leading-relaxed text-gray-700 h-max"
-          data-value="html">
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg" alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg" alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1493&amp;q=80"
-              alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
-              alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2762&amp;q=80"
-              alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2832&amp;q=80"
-              alt="image-photo" />
-          </div>
-        </div>
-      </div>
-      <div className="hidden opacity-0" id="settings" role="tabpanel">
-        <div role="tabpanel"
-          className="grid w-full grid-cols-3 gap-4 p-4 font-sans text-base antialiased font-light leading-relaxed text-gray-700 h-max"
-          data-value="html">
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
-              alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2762&amp;q=80"
-              alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg" alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg" alt="image-photo" />
-          </div>
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1493&amp;q=80"
-              alt="image-photo" />
-          </div>
- 
-          <div>
-            <img className="w-full h-40 max-w-full rounded-lg"
-              src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2832&amp;q=80"
-              alt="image-photo" />
-          </div>
-        </div>
-      </div>
+import { Banner } from "./Banner";
+import "./Grid.css";
+
+const images = [
+  "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80",
+  "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80",
+  "https://media.istockphoto.com/photos/the-main-attraction-of-paris-and-all-of-europe-is-the-eiffel-tower-in-picture-id1185953092?k=6&m=1185953092&s=612x612&w=0&h=SNiShskOfwQ7Sys5TX0eb5eBxHobktWUfZGrox5LMyk=",
+  "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+  "https://images.ctfassets.net/hrltx12pl8hq/3MbF54EhWUhsXunc5Keueb/60774fbbff86e6bf6776f1e17a8016b4/04-nature_721703848.jpg?fit=fill&w=480&h=270",
+  "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+  "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+].map((image) => ({
+  id: crypto.randomUUID(),
+  image
+}));
+
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <h2>Start editing to see some magic happen!</h2>
+      <Banner images={images} speed={5000} />
     </div>
-  </div>
-</div>
-
-
-<DesignComponent/>
-</>
-
-    )
+  );
 }
-export default Grid

@@ -7,8 +7,8 @@ import photo4 from '../src/Components/homie4.png';
 import { CiFacebook } from "react-icons/ci";
 import { SlSocialTwitter } from "react-icons/sl";
 import { FaInstagram } from "react-icons/fa";
-import Grid from "./Grid";
 import { fadeIn } from '../src/varients';
+import DesignComponents from './DesignComponents'
 import './Cards.css';
 
 const cardData = [
@@ -100,7 +100,7 @@ function Cards() {
           <Card key={index} photo={data.photo} direction={data.direction} />
         ))}
       </div>
-      <Grid />
+      <DesignComponents/>
     </>
   );
 }
