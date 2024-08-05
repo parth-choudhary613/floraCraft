@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaQuestion, FaBook, FaCalculator, FaFlask, FaRocket } from 'react-icons/fa';
 import './DesignComponents.css'; 
-import Grid from './Grid'
+import Description from './Description';
 
 const items = [
   { icon: <FaQuestion />, text: 'STRUCTURE', iconColor: 'text-yellow-700', color: 'bg-structure' },
@@ -14,7 +14,7 @@ const items = [
 const DesignComponent = () => {
   return (
     <>
-<Grid/>
+
     <div className="flex flex-col items-center space-y-4 p-8 mt-8">
       {items.map((item, index) => (
         <div key={index} className={`flex items-center p-4 rounded-lg shadow-lg w-full max-w-xs ${item.color}`}>
@@ -30,7 +30,8 @@ const DesignComponent = () => {
         </div>
       ))}
     </div>
-    </>
+    <Description/>
+      </>
   );
 };
 
