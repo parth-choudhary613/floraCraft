@@ -1,4 +1,5 @@
 import React from "react";
+import WallOfFame from './wallofFame';
 function description() {
     
     return(
@@ -26,6 +27,7 @@ function description() {
     </div>
   </div>
 </div>
+<WallOfFame/>
         </>
     )
 }
