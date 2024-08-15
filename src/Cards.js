@@ -51,7 +51,7 @@ const Card = ({ photo, direction }) => {
             viewport={{ once: false, amount: 0.3 }}
             className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900"
           >
-            Russberry Tulip
+            Some of our products
           </motion.h4>
           <motion.p 
             variants={fadeIn(direction, 1.0)}

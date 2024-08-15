@@ -31,15 +31,15 @@ return (
       <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
         <div className="hidden sm:ml-6 sm:block">
           <div className="flex space-x-4 lg:space-x-20">
-            <Link to="#" className="px-3 py-2 text-sm font-medium text-pink-500 hover:bg-pink-500 bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center">Dashboard</Link>
-            <Link to="#" className="px-3 py-2 text-sm font-medium text-white-300 hover:bg-pink-500 bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center">Team</Link>
-            <Link to="#" className="px-3 py-2 text-sm font-medium text-white-300 hover:bg-pink-500 bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center">Projects</Link>
-            <Link to="#" className="px-3 py-2 text-sm font-medium text-white-300 hover:bg-pink-500 bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center">Calendar</Link>
+            <Link to="#" className="px-3 py-2 text-sm font-medium text-pink-500 hover:bg-pink-500 bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center">Home</Link>
+            <Link to="/Gifts" className="px-3 py-2 text-sm font-medium text-white-300 hover:bg-pink-500 bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center">Gifts</Link>
+            <Link to="#" className="px-3 py-2 text-sm font-medium text-white-300 hover:bg-pink-500 bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center">Bouquet</Link>
+            <Link to="#" className="px-3 py-2 text-sm font-medium text-white-300 hover:bg-pink-500 bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center">About Us</Link>
           </div>
         </div>
       </div>
       <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 px-8">
-        <Link to="#" className="py-2 text-sm font-medium text-white-300 hover:bg-pink-500 bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center">Calendar</Link>
+        <Link to="#" className="py-2 text-sm font-medium text-white-300 hover:bg-pink-500 bg-rose-200/50 hover:text-white rounded-full border-none w-24 text-center">Noifications</Link>
         <button type="button" className="relative rounded-full bg-pink-800 p-1 text-pink-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
           <span className="sr-only">View notifications</span>
           <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">

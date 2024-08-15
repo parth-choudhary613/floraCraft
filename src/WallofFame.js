@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import {fadeIn} from '../src/varients';
 import './Cards.css'
+import Footer from './Components/Footer'
 const WallOfFame = () => {
   return (
     <>
@@ -123,6 +124,7 @@ const WallOfFame = () => {
       </motion.div>
     </div>
     <p className='walloffame mt-8 text-5xl '>Wall Of Fame</p>
+<Footer/>
     </>
     
   );
